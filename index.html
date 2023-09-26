@@ -1,0 +1,58 @@
+<!DOCTYPE html>  <!--By Juan Esteban 26/09/23  (--Spectral--)-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Favicon y titulo de la pagina-->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Results summary component</title>
+
+<!--Estilos Css Compilados de Sass--> 
+                <!--Compilador  'sass --watch sass:css'-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--contenedor principal de la pagina del contenido-->
+    <div class="div_master">
+        <div class="container__principal">
+            
+            <!--primer contendor-->
+            <div class="container__anidado">
+                <h3>Your Results</h3>
+                <div>
+                    <p><span class="sp1">76</span><br><span class="sp2">of 100</span></p>
+                </div>
+                <h3 class="Great">Great</h3>
+                <p>You score higher than 65% of the people who have taken these test</p>
+            </div>
+
+            <!--segundo contendor-->
+            <div class="container__sumary">
+                <h2>Sumary</h2>
+                <div class="container__juniors juniors1">
+                    <img src="assets/images/icon-reaction.svg" alt="">
+                    <h4 class="Reaction">Reaction</h4>
+                    <h3><span style="font-weight: bold;">90</span><span style="color: grey;"> / 100</span></h3>
+                </div>
+                <div class="container__juniors juniors2">
+                    <img src="assets/images/icon-memory.svg" alt="">
+                    <h4 class="Memory">Memory</h4>
+                    <h3><span style="font-weight: bold;">76</span><span style="color: grey;"> / 100</span></h3>
+                </div>
+                <div class="container__juniors juniors3">
+                    <img src="assets/images/icon-verbal.svg" alt="">
+                    <h4 class="Verbal">Verbal</h4>
+                    <h3><span style="font-weight: bold;">62</span><span style="color: grey;"> / 100</span></h3>
+                </div>
+                <div class="container__juniors juniors4">
+                    <img src="assets/images/icon-visual.svg" alt="">
+                    <h4 class="Visual">Visual</h4>
+                    <h3><span style="font-weight: bold;">85</span><span style="color: grey;"> / 100</span></h3>
+                </div>
+                <button type="submit">Continue</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+/*Gradients*/
+/*(background)*/
+/*circle*/
+/*Neutral*/
+* {
+  font-family: "Hanken Grotesk", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(245, 245, 245);
+  cursor: default;
+}
+
+.container__principal {
+  width: 650px;
+  height: 475px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 2px 9px 20px hsl(221, 100%, 96%);
+  border-radius: 20px;
+  display: flex;
+}
+.container__principal .container__anidado {
+  width: 50%;
+  height: 475px;
+  background: linear-gradient(to bottom, hsl(252, 97%, 65%), hsl(241, 69%, 47%));
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+}
+.container__principal .container__anidado div {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to top, hsl(252, 86%, 54%), hsl(241, 69%, 46%));
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container__principal .container__anidado div .sp1 {
+  font-size: 80px;
+  color: hsl(0, 0%, 100%);
+}
+.container__principal .container__anidado div .sp2 {
+  font-size: 20px;
+  color: hsl(0, 0%, 100%);
+}
+.container__principal .container__anidado .Great {
+  font-size: 25px;
+}
+.container__principal .container__anidado p {
+  width: 70%;
+  height: auto;
+  text-align: center;
+}
+.container__principal .container__sumary {
+  width: 50%;
+  height: 475px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.container__principal .container__sumary .container__juniors {
+  width: 80%;
+  height: 50px;
+  background-color: rgb(145, 145, 145);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.container__principal .container__sumary .container__juniors h4 {
+  margin-left: 10px;
+}
+.container__principal .container__sumary .container__juniors img {
+  margin-left: 15px;
+}
+.container__principal .container__sumary .container__juniors h3 {
+  width: 100%;
+  font-size: 18px;
+  text-align: end;
+  margin-right: 10px;
+}
+.container__principal .container__sumary button {
+  width: 80%;
+  height: 45px;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  border-radius: 30px;
+  background: linear-gradient(to bottom, hsl(251, 19%, 43%), hsl(240, 20%, 27%));
+}
+.container__principal .container__sumary button:hover {
+  background: linear-gradient(to bottom, hsl(252, 91%, 62%), hsl(241, 69%, 47%));
+}
+.container__principal .container__sumary .juniors1 {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+.container__principal .container__sumary .juniors1:hover {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+.container__principal .container__sumary .juniors1 h4 {
+  color: rgba(255, 0, 0, 0.6);
+}
+.container__principal .container__sumary .juniors2 {
+  background-color: rgba(234, 188, 0, 0.1);
+}
+.container__principal .container__sumary .juniors2:hover {
+  background-color: rgba(234, 188, 0, 0.2);
+}
+.container__principal .container__sumary .juniors2 h4 {
+  color: rgba(234, 188, 0, 0.6);
+}
+.container__principal .container__sumary .juniors3 {
+  background-color: rgba(10, 255, 74, 0.1);
+}
+.container__principal .container__sumary .juniors3:hover {
+  background-color: rgba(10, 255, 74, 0.2);
+}
+.container__principal .container__sumary .juniors3 h4 {
+  color: rgba(10, 255, 74, 0.6);
+}
+.container__principal .container__sumary .juniors4 {
+  background-color: rgba(44, 77, 170, 0.1);
+}
+.container__principal .container__sumary .juniors4:hover {
+  background-color: rgba(44, 77, 170, 0.2);
+}
+.container__principal .container__sumary .juniors4 h4 {
+  color: rgba(44, 77, 170, 0.6);
+}
+.container__principal h2 {
+  width: 100%;
+  text-align: start;
+  margin-left: 60px;
+}
+
+@media screen and (max-width: 700px) {
+  .container__principal {
+    width: 375px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px;
+  }
+  .container__principal .container__anidado {
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+  }
+  .container__principal .container__sumary {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

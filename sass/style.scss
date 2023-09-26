@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+/*Gradients*/
+$Light_slate_blue: hsl(252, 97%, 65%);
+/*(background)*/
+$Light_royal_blue: hsl(241, 69%, 47%);
+
+$Violet_blue: hsla(256, 72%, 46%, 1);
+/*circle*/
+$Persian_blue: hsla(241, 72%, 46%, 0);
+
+/*Neutral*/
+$White: hsl(0, 0%, 100%);
+$Pale_blue: hsl(221, 100%, 96%);
+$Light_lavender: hsl(241, 100%, 89%);
+$Dark_gray_blue: hsl(224, 30%, 27%);
+
+* {
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+body,
+html {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+    cursor: default;
+
+}
+
+.container__principal {
+    width: 650px;
+    height: 475px;
+    background-color: $White;
+    box-shadow: 2px 9px 20px $Pale_blue;
+    border-radius: 20px;
+    display: flex;
+
+    .container__anidado {
+        width: 50%;
+        height: 475px;
+        background: linear-gradient(to bottom, $Light_slate_blue, $Light_royal_blue);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        color: $White;
+
+        div {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(to top, hsl(252, 86%, 54%), hsl(241, 69%, 46%));
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .sp1 {
+                font-size: 80px;
+                color: $White;
+            }
+
+            .sp2 {
+                font-size: 20px;
+                color: $White;
+            }
+        }
+
+        .Great {
+            font-size: 25px;
+        }
+
+        p {
+            width: 70%;
+            height: auto;
+            text-align: center;
+        }
+    }
+
+    .container__sumary {
+        width: 50%;
+        height: 475px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .container__juniors {
+            width: 80%;
+            height: 50px;
+            background-color: rgb(145, 145, 145);
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            cursor: pointer;
+
+            h4 {
+                margin-left: 10px;
+            }
+
+            img {
+                margin-left: 15px;
+            }
+
+            h3 {
+                width: 100%;
+                font-size: 18px;
+                text-align: end;
+                margin-right: 10px;
+            }
+        }
+
+        button {
+            width: 80%;
+            height: 45px;
+            border: none;
+            color: $White;
+            cursor: pointer;
+            border-radius: 30px;
+            background: linear-gradient(to bottom, hsl(251, 19%, 43%), hsl(240, 20%, 27%));
+
+            &:hover {
+                background: linear-gradient(to bottom, hsl(252, 91%, 62%), hsl(241, 69%, 47%));
+            }
+        }
+
+        .juniors1 {
+            background-color: rgba(255, 0, 0, 0.1);
+
+
+
+            &:hover {
+                background-color: rgba(255, 0, 0, 0.2);
+            }
+
+            h4 {
+                color: rgba(255, 0, 0, 0.6);
+            }
+        }
+
+        .juniors2 {
+            background-color: rgba(234, 188, 0, 0.1);
+
+            &:hover {
+                background-color: rgba(234, 188, 0, 0.2);
+            }
+
+            h4 {
+                color: rgba(234, 188, 0, 0.6);
+            }
+        }
+
+        .juniors3 {
+            background-color: rgba(10, 255, 74, 0.1);
+
+            &:hover {
+                background-color: rgba(10, 255, 74, 0.2);
+            }
+
+            h4 {
+                color: rgba(10, 255, 74, 0.6);
+            }
+        }
+
+        .juniors4 {
+            background-color: rgba(44, 77, 170, 0.1);
+
+            &:hover {
+                background-color: rgba(44, 77, 170, 0.2);
+            }
+
+            h4 {
+                color: rgba(44, 77, 170, 0.6);
+            }
+
+        }
+    }
+
+    h2 {
+        width: 100%;
+        text-align: start;
+        margin-left: 60px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .container__principal {
+        width: 375px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0px;
+
+
+        .container__anidado {
+            width: 100%;
+            border-radius: 0px 0px 20px 20px;
+        }
+
+        .container__sumary {
+            width: 100%;
+
+        }
+    }
+}
